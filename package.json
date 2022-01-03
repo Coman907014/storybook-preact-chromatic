@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "my-project",
-  "version": "0.0.0",
+  "name": "storybook-preact-chromatic",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "build": "preact build",
