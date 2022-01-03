@@ -23,10 +23,10 @@ jobs:
         uses: actions/cache@v1
       - name: Create Release
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
           #👇 npm token, see https://storybook.js.org/tutorials/design-systems-for-developers/react/en/distribute/ to obtain it
-          NPM_TOKEN: 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
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npm install --frozen-lockfile
+          npm install
           npm build
           npm release
