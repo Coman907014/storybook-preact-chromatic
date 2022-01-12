@@ -1,9 +1,9 @@
 import { h } from 'preact';
 import {useEffect, useState} from "preact/hooks";
-import style from './style.css';
+import style from './style.less';
 
 // Note: `user` comes from the URL, courtesy of our router
-const Profile = ({ user }) => {
+const Profile = ({ user }: any) => {
 	const [time, setTime] = useState(Date.now());
 	const [count, setCount] = useState(10);
 
@@ -13,7 +13,7 @@ const Profile = ({ user }) => {
 	}, []);
 
 	return (
-		<div class={style.profile}>
+		<div className={style.profile}>
 			<h1>Profile: {user}</h1>
 			<p>This is the user profile for a user named { user }.</p>
 

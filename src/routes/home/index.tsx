@@ -1,8 +1,8 @@
 import { h } from 'preact';
-import style from './style.css';
+import style from './style.less';
 
-const Home = () => (
-	<div class={style.home}>
+const Home = ({}: any) => (
+	<div className={style.home}>
 		<h1>Home</h1>
 		<p>This is the Home component.</p>
 	</div>

@@ -6,15 +6,19 @@ import Header from './header';
 // Code-splitting is automated for `routes` directory
 import Home from '../routes/home';
 import Profile from '../routes/profile';
+import style from './style.less';
+import '../theme/index.css'
+
+const RouterComponent: any = Router;
 
 const App = () => (
-	<div id="app">
+	<div id="app" className={style.something}>
 		<Header />
-		<Router>
+		<RouterComponent>
 			<Home path="/" />
 			<Profile path="/profile/" user="me" />
 			<Profile path="/profile/:user" />
-		</Router>
+		</RouterComponent>
 	</div>
 )
 
