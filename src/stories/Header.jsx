@@ -3,7 +3,7 @@ import { h, Fragment } from 'preact';
 import PropTypes from 'prop-types';
 
 import { Button } from './Button';
-import './header.css';
+import './header.less';
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <header>

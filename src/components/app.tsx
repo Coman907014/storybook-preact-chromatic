@@ -1,13 +1,13 @@
 import { h } from 'preact';
 import { Router } from 'preact-router';
-
+import '../theme/index.less'
 import Header from './header';
 
 // Code-splitting is automated for `routes` directory
 import Home from '../routes/home';
 import Profile from '../routes/profile';
 import style from './style.less';
-import '../theme/index.css'
+
 
 const RouterComponent: any = Router;
 

@@ -3,7 +3,7 @@ import { h } from 'preact';
 import { Header } from './Header';
 
 export default {
-  title: 'Example/Header',
+  title: 'Components/Header',
   component: Header,
   argTypes: {
     onLogin: { action: 'onLogin' },

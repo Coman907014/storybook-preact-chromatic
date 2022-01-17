@@ -5,7 +5,9 @@ module.exports = {
   ],
   "addons": [
     "@storybook/addon-links",
-    "@storybook/addon-essentials"
+    "@storybook/addon-essentials",
+    "storybook-preset-less"
   ],
-  "framework": "@storybook/preact"
+  babel: async (options) => ({ ...options }),
+  "framework": "@storybook/preact",
 }

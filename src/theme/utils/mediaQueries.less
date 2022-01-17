@@ -1,0 +1,31 @@
+@import '../constants/breakpoints.less';
+
+.mobile(@rules) {
+  @media screen and (max-width: @extraSmall) {
+    @rules();
+  }
+}
+
+.mobileLarge(@rules) {
+  @media screen and (max-width: @small) {
+    @rules();
+  }
+}
+
+.tablet(@rules) {
+  @media screen and (max-width:@medium) {
+    @rules();
+  }
+}
+
+.smallDesktop(@rules) {
+  @media screen and (max-width: @large) {
+    @rules();
+  }
+}
+
+.largeDesktop(@rules) {
+  @media screen and (min-width: @extraLarge) {
+    @rules();
+  }
+}
