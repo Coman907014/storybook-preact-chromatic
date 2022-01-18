@@ -1,0 +1,278 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs';
+import SpacingUsageGuidelines1 from '../assets/foundations/SpacingUsageGuidelines1.png';
+import SpacingUsageGuidelines2 from '../assets/foundations/SpacingUsageGuidelines2.png';
+import SpacingUsageGuidelines3 from '../assets/foundations/SpacingUsageGuidelines3.png';
+import SpacingUsageGuidelines4 from '../assets/foundations/SpacingUsageGuidelines4.png';
+import SpacingExample1 from '../assets/foundations/SpacingExample1.png';
+import SpacingExample2 from '../assets/foundations/SpacingExample2.png';
+import SpacingTouchTargets from '../assets/foundations/SpacingTouchTargets.png';
+import SpacingTouchTargetsGuidelines from '../assets/foundations/SpacingTouchTargetsGuidelines.png';
+
+import '../../theme/index.less';
+
+<Meta title="Foundations/Spacing" />
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pb-8">
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+    <h1>Spacing</h1>
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Spacing Scale</h2>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12">
+  <p className="row start-align col-lg-12 col-md-12 col-sm-12">
+    The spacing scale can be applied to margin or padding properties, as well as to both vertical and horizontal edges. The token takes the place of the values normally assigned to margin and padding.
+  </p>
+
+  <p className="row start-align col-lg-12 col-md-12 col-sm-12 font-weight-bold">It’s important that when applying spacing it...</p>
+  <ul>
+    <li>Creates relationships between elements</li>
+    <li>Enforces a visual hierarchy on the page</li>
+    <li>Generates whitespace</li>
+  </ul>
+</div>
+
+<div className="row center-align col-lg-12 col-md-12 col-sm-12">
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 font-weight-bold">Token</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 font-weight-bold">REM</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 font-weight-bold">PX</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 font-weight-bold">Example</div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">Spacing-2</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">0.125</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">2</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">
+    <div style={{ background: '#865E87', height: '2px', width: '2px' }}></div>
+  </div>
+
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">Spacing-4</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">0.25</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">4</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">
+    <div style={{ background: '#865E87', height: '4px', width: '4px' }}></div>
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">Spacing-8</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">0.5</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">8</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">
+    <div style={{ background: '#865E87', height: '8px', width: '8px' }}></div>
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">Spacing-12</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">0.75</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">12</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">
+    <div style={{ background: '#865E87', height: '12px', width: '12px' }}></div>
+  </div>
+
+  
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">Spacing-16</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">1</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">16</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">
+    <div style={{ background: '#865E87', height: '16px', width: '16px' }}></div>
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">Spacing-24</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">1.5</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">24</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">
+    <div style={{ background: '#865E87', height: '24px', width: '24px' }}></div>
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">Spacing-32</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">2</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">32</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">
+    <div style={{ background: '#865E87', height: '32px', width: '32px' }}></div>
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">Spacing-40</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">2.5</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">40</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">
+    <div style={{ background: '#865E87', height: '40px', width: '40px' }}></div>
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">Spacing-64</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">4</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">64</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">
+    <div style={{ background: '#865E87', height: '64px', width: '64px' }}></div>
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">Spacing-80</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">5</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">80</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">
+    <div style={{ background: '#865E87', height: '80px', width: '80px' }}></div>
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">Spacing-96</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">6</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">96</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">
+    <div style={{ background: '#865E87', height: '96px', width: '96px' }}></div>
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">Spacing-128</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">8</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">128</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">
+    <div style={{ background: '#865E87', height: '128px', width: '128px' }}></div>
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">Spacing-160</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">10</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">160</div>
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 pt-8">
+    <div style={{ background: '#865E87', height: '160px', width: '160px' }}></div>
+  </div>
+
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Usage Guidelines</h2>
+</div>
+
+<div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-32">
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+    <img src={SpacingUsageGuidelines1} style={{ width: '100%' }}/>
+  </div>
+</div>
+
+<div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <div className="start-align col-lg-6 col-md-6 col-sm-6 pt-2">
+    Do use less space between elements that share a close functional relationship to portray an understandable visual hierarchy.
+  </div>
+  <div className="start-align col-lg-6 col-md-6 col-sm-6 pt-2">
+    Do not evenly spread elements if they have a functional relationship.
+  </div>
+</div>
+
+<div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-32">
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+    <img src={SpacingUsageGuidelines2} style={{ width: '100%' }}/>
+  </div>
+</div>
+
+<div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <div className="start-align col-lg-6 col-md-6 col-sm-6 pt-2">
+    Do use the 4px baseline grid spacing values to maintain a consistent visual hierarchy.
+  </div>
+  <div className="start-align col-lg-6 col-md-6 col-sm-6 pt-2">
+    Do not introduce new spacing values that fall outside the 4px baseline spacing scale, unless it is documented exception in the design system.
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Exceptions</h2>
+</div>
+
+<div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <div className="start-align col-lg-4 col-md-4 col-sm-4 pt-2">
+    When text is vertically centered inside a component, the top and bottom padding can be any size to forfill the overall component height that meets the 4px baseline scale.
+  </div>
+  <div className="start-align col-lg-8 col-md-8 col-sm-8 pt-2">
+    <img src={SpacingUsageGuidelines3} style={{ width: '100%' }}/>
+  </div>
+</div>
+
+<div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <div className="row start-align col-lg-4 col-md-4 col-sm-4 pt-2">
+    <h4>Optical Adjustments</h4>
+    Sometimes an element is larger than it appears. Spacing based on the invisible edges of the element will feel wrong. To correct these optical effects, adjust the spacing in 4px increments until it looks more balanced.<br />
+    Without optical adjustment, the icon within the button will appear too far from the right edge of the button. After optical correction, the perceived spacing is more balanced. This issue is commonly found with icons as they have an invisible bounding box.
+  </div>
+  <div className="row start-align middle-align col-lg-8 col-md-8 col-sm-8 pt-2">
+    <img src={SpacingUsageGuidelines4} style={{ width: '100%' }}/>
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Examples</h2>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8 pb-32">
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-2">
+    The following components within the current Virgin Atlantic web experience have been identified to help capture the impact of integrating a spacing system with the new type scale.
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <h3 className="row start-align col-lg-12 col-md-12 col-sm-12">Flight results card</h3>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <div className="row start-align col-lg-6 col-md-6 col-sm-6 pt-2">
+    Enhancements to the flight results card include typography and spacing alignment to reflect the impact of involving a 4px baseline.
+  </div>
+</div>
+
+<div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8 pb-32">
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-2">
+    <img src={SpacingExample1} style={{ width: '100%' }}/>
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <h3 className="row start-align col-lg-12 col-md-12 col-sm-12">Cabin Comparison</h3>
+</div>
+
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <div className="row start-align col-lg-6 col-md-6 col-sm-6 pt-2">
+    Enhancements to the cabin comparison include typography and spacing alignment to reflect the impact of involving a 4px baseline.
+  </div>
+</div>
+
+<div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8 pb-32">
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-2">
+    <img src={SpacingExample2} style={{ width: '100%' }}/>
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Touch Targets</h2>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-2">
+    Touch targets are the parts of the screen that respond to user input. They extend beyond the visual bounds of an element. For example, an icon may appear to be 24 x 24 px, but the padding surrounding it comprises the full 48 x 48 px touch target.
+  </div>
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8 pb-8">
+    <h3>Minimum Touch Target Size</h3>
+    Touch targets should be at least 48 x 48 px. A touch target of this size results in a physical size of about 9mm, regardless of screen size. For smaller components like icons and checkboxes this can be built up using padding to reach the target size.
+  </div>
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8">
+    <img src={SpacingTouchTargets} />
+  </div>
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+    <h3>Space Between Touch Targets</h3>
+    To avoid mis-hits on touch devices and enforce a cursor change when using a mouse, touch targets should be separated by a minimum of 8px.
+  </div>
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+    <h3>Exceptions</h3>
+    Inline elements such as links do not need to meet the minimum touch target size as this can cause links to overlap if used within a paragraph.
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+    <h3>Pointer Targets</h3>
+    Pointer targets are similar to touch targets, but apply to the use of motion-tracking pointer devices such as a mouse or a stylus. 
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Usage Guidelines</h2>
+</div>
+
+<div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8">
+  <img
+    className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8" 
+    src={SpacingTouchTargetsGuidelines}/>
+</div>

@@ -14,16 +14,20 @@ import '../../theme/index.less';
 
 <style>{`
 
-  p, div {
-    margin: inherit;
+  p {
+    margin: 10px 0;
+  }
+
+  h1 {
+    margin-bottom: 10px !important;
   }
 
   h2 {
-    margin-top: 40px !important;
+    margin: 40px 0 !important;
   }
 
   h3 {
-    margin-top: 20px !important;
+    margin: 20px 0 !important;
   }
 
   .column {
@@ -122,22 +126,24 @@ import '../../theme/index.less';
     line-height: 32px;
   }
 `}</style>
+<div className="row start-align col-lg-12 col-md-12 col-sm-12">
+  <h1>Layout</h1>
+</div>
+<p className="row start-align col-lg-12 col-md-12 col-sm-12 alert-text">
+  Add layout description here.
+</p>
 
-<h1>Layout</h1>
+<h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Baseline</h2>
 
-<p className="alert-text">Add layout description here.</p>
+<p className="row start-align col-lg-12 col-md-12 col-sm-12">The baseline grid is used to create vertical rhythm in digital product design. All components align to 4px square baseline grid for mobile, tablet, and desktop.</p>
 
-<h2>Baseline</h2>
-
->The baseline grid is used to create vertical rhythm in digital product design. All components align to 4px square baseline grid for mobile, tablet, and desktop.
-
->In addition the Virgin Atlantic type stack specifies 16px for the base font size, which produces an 8px x-height.<br/>
+<p className="row start-align col-lg-12 col-md-12 col-sm-12">In addition the Virgin Atlantic type stack specifies 16px for the base font size, which produces an 8px x-height.<br/>
 The x-height is halved (when needed) to produce a 4px baseline. The 4px baseline is there to allow more flexibility for line heights and smaller adjustments.
-All text, components, imagery (everything) flows vertically along this baseline, creating a similar rhythm across all screens in our experience. This rhythm is created by the line height between each line of text and the margin between elements. 
+All text, components, imagery (everything) flows vertically along this baseline, creating a similar rhythm across all screens in our experience. This rhythm is created by the line height between each line of text and the margin between elements. </p>
 
 
-<div className="link-list">
-  <div className="link-item" >
+<div className="row link-list start-align col-lg-12 col-md-12 col-sm-12">
+  <div className="link-item">
     <img src={Baseline1} className="left-img" alt="baseline" />
     <span>
       <strong>Always follow the grid</strong>
@@ -153,26 +159,26 @@ All text, components, imagery (everything) flows vertically along this baseline,
   </div>
 </div>
 
-<div className="subheading">Vertical Rhythm</div>
-TBD?
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 subheading">Vertical Rhythm</div>
+<div className="row start-align col-lg-12 col-md-12 col-sm-12">TBD?</div>
 
-<h2>Layout Grids</h2>
-<h3>Grid Anatomy</h3>
+<h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Layout Grids</h2>
+<h3 className="row start-align col-lg-12 col-md-12 col-sm-12">Grid Anatomy</h3>
 <img src={LayoutGrids1} style={{ width: '100%' }}/>
-<h5>Columns</h5>
-<p>Columns define the space inwhich content can be placed on-screen. In responsive layouts, columns are fluid which means that their width is determined but the gutters and margin values. If these values change at each breakpoint, the column width adjusts based on this.</p>
-<h5>Gutters</h5>
-<p>A gutter is the space between columns, helping to separate content on a page. They are fixed values that can change at each breakpoint to better adapt to a given screen resolution.</p>
-<h5>Margins</h5>
-<p>Margins are the space either side of the columns on the left and right edges of the screen. They can be fixed or scaling values that can change at each breakpoint to better adapt to a given screen resolution.</p>
-<h3>Breakpoint System</h3>
-<p>Users expect any website to be perfectly complementary with every single device they own – desktop, tablet, or mobile. If a website’s responsive design does not align with a certain device resolution (especially a commonly used device), the site is at risk of missing out on a segment of its target audience. Therefore, breakpoints help to maintain layout integrity across screen sizes.</p>
-<div style={{ display: 'flex', justifyContent: 'center' }}>
+<h5 className="row start-align col-lg-12 col-md-12 col-sm-12">Columns</h5>
+<p className="row start-align col-lg-12 col-md-12 col-sm-12">Columns define the space inwhich content can be placed on-screen. In responsive layouts, columns are fluid which means that their width is determined but the gutters and margin values. If these values change at each breakpoint, the column width adjusts based on this.</p>
+<h5 className="row start-align col-lg-12 col-md-12 col-sm-12">Gutters</h5>
+<p className="row start-align col-lg-12 col-md-12 col-sm-12">A gutter is the space between columns, helping to separate content on a page. They are fixed values that can change at each breakpoint to better adapt to a given screen resolution.</p>
+<h5 className="row start-align col-lg-12 col-md-12 col-sm-12">Margins</h5>
+<p className="row start-align col-lg-12 col-md-12 col-sm-12">Margins are the space either side of the columns on the left and right edges of the screen. They can be fixed or scaling values that can change at each breakpoint to better adapt to a given screen resolution.</p>
+<h3 className="row start-align col-lg-12 col-md-12 col-sm-12">Breakpoint System</h3>
+<p className="row start-align col-lg-12 col-md-12 col-sm-12">Users expect any website to be perfectly complementary with every single device they own – desktop, tablet, or mobile. If a website’s responsive design does not align with a certain device resolution (especially a commonly used device), the site is at risk of missing out on a segment of its target audience. Therefore, breakpoints help to maintain layout integrity across screen sizes.</p>
+<div className="row center-align col-lg-12 col-md-12 col-sm-12" style={{ display: 'flex', marginTop: '10px' }}>
   <img src={BreakpointSystem} style={{ margin: '0 auto' }}/>
 </div>
 
-<h3>Columns</h3>
-
+<h3 className="row start-align col-lg-12 col-md-12 col-sm-12">Columns</h3>
+<p className="row start-align col-lg-12 col-md-12 col-sm-12">Responsiveness can be showcased using Storybook's <a href="https://storybook.js.org/docs/react/essentials/viewport" target="_blank">viewport changer</a>.</p>
 <div className="row margin-top">
   <div className="column col-lg-12 col-md-12 col-sm-12">12/12</div>
 </div>
@@ -183,16 +189,6 @@ TBD?
 </div>
 
 <div className="row margin-top">
-  <div className="column col-lg-6 col-md-6 col-sm-6">
-    <div className="row margin-top">
-      <div className="column col-lg-6 col-md-6 col-sm-6" style={{ backgroundColor: 'red' }}>6/12</div>
-      <div className="column col-lg-6 col-md-6 col-sm-6" style={{ backgroundColor: 'red' }}>6/12</div>
-    </div>
-  </div>
-  <div className="column col-lg-6 col-md-6 col-sm-6">6/12</div>
-</div>
-
-<div className="row margin-top">
   <div className="column col-lg-4 col-md-4 col-sm-4">4/12</div>
   <div className="column col-lg-4 col-md-4 col-sm-4">4/12</div>
   <div className="column col-lg-4 col-md-4 col-sm-4">4/12</div>
@@ -206,39 +202,39 @@ TBD?
 </div>
 
 <div className="row margin-top">
-  <div className="column col-lg-2 col-md-2 col-sm-2">2/12</div>
-  <div className="column col-lg-2 col-md-2 col-sm-2">2/12</div>
-  <div className="column col-lg-2 col-md-2 col-sm-2">2/12</div>
-  <div className="column col-lg-2 col-md-2 col-sm-2">2/12</div>
-  <div className="column col-lg-2 col-md-2 col-sm-2">2/12</div>
-  <div className="column col-lg-2 col-md-2 col-sm-2">2/12</div>
+  <div className="column col-lg-2 col-md-2 col-sm-2">2</div>
+  <div className="column col-lg-2 col-md-2 col-sm-2">2</div>
+  <div className="column col-lg-2 col-md-2 col-sm-2">2</div>
+  <div className="column col-lg-2 col-md-2 col-sm-2">2</div>
+  <div className="column col-lg-2 col-md-2 col-sm-2">2</div>
+  <div className="column col-lg-2 col-md-2 col-sm-2">2</div>
 </div>
 
 <div className="row margin-top">
-  <div className="column col-lg-1 col-md-1 col-sm-1">1/12</div>
-  <div className="column col-lg-1 col-md-1 col-sm-1">1/12</div>
-  <div className="column col-lg-1 col-md-1 col-sm-1">1/12</div>
-  <div className="column col-lg-1 col-md-1 col-sm-1">1/12</div>
-  <div className="column col-lg-1 col-md-1 col-sm-1">1/12</div>
-  <div className="column col-lg-1 col-md-1 col-sm-1">1/12</div>
-  <div className="column col-lg-1 col-md-1 col-sm-1">1/12</div>
-  <div className="column col-lg-1 col-md-1 col-sm-1">1/12</div>
-  <div className="column col-lg-1 col-md-1 col-sm-1">1/12</div>
-  <div className="column col-lg-1 col-md-1 col-sm-1">1/12</div>
-  <div className="column col-lg-1 col-md-1 col-sm-1">1/12</div>
-  <div className="column col-lg-1 col-md-1 col-sm-1">1/12</div>
+  <div className="column col-lg-1 col-md-1 col-sm-1">1</div>
+  <div className="column col-lg-1 col-md-1 col-sm-1">1</div>
+  <div className="column col-lg-1 col-md-1 col-sm-1">1</div>
+  <div className="column col-lg-1 col-md-1 col-sm-1">1</div>
+  <div className="column col-lg-1 col-md-1 col-sm-1">1</div>
+  <div className="column col-lg-1 col-md-1 col-sm-1">1</div>
+  <div className="column col-lg-1 col-md-1 col-sm-1">1</div>
+  <div className="column col-lg-1 col-md-1 col-sm-1">1</div>
+  <div className="column col-lg-1 col-md-1 col-sm-1">1</div>
+  <div className="column col-lg-1 col-md-1 col-sm-1">1</div>
+  <div className="column col-lg-1 col-md-1 col-sm-1">1</div>
+  <div className="column col-lg-1 col-md-1 col-sm-1">1</div>
 </div>
 
-<h3>Offset columns</h3>
+<h3 className="row start-align col-lg-12 col-md-12 col-sm-12">Offset columns</h3>
 
 <div className="row margin-top">
   <div className="column col-lg-offset-11 col-md-offset-11 col-sm-offset-11"></div>
-  <div className="column col-lg-1 col-md-1 col-sm-1">11/12</div>
+  <div className="column col-lg-1 col-md-1 col-sm-1">1 </div>
 </div>
 
 <div className="row margin-top">
   <div className="column col-lg-offset-10 col-md-offset-10 col-sm-offset-10"></div>
-  <div className="column col-lg-2 col-md-2 col-sm-2">2/12</div>
+  <div className="column col-lg-2 col-md-2 col-sm-2">2</div>
 </div>
 
 <div className="row margin-top">
@@ -287,14 +283,14 @@ TBD?
   <div className="column col-lg-11 col-md-11 col-sm-11">11/12</div>
 </div>
 
-<h3>Usage Guidelines</h3>
-<img src={UsageGuidelines} style={{ width: '100%' }} />
-<ul>
-  <li style={{ color: 'green' }}>
+<h3 className="start-align col-lg-12 col-md-12 col-sm-12">Usage Guidelines</h3>
+<img className="start-align col-lg-12 col-md-12 col-sm-12" src={UsageGuidelines} style={{ width: '100%' }} />
+<ul className="start-align col-lg-12 col-md-12 col-sm-12">
+  <li className="start-align col-lg-12 col-md-12 col-sm-12" style={{ color: 'green' }}>
     Do align type (outside of a container), components, and cards to the columns.
   </li>
 
-  <li style={{ color: 'red' }}>
+  <li className="start-align col-lg-12 col-md-12 col-sm-12" style={{ color: 'red' }}>
     Do NOT take type off the column structure to achieve alignment.
   </li>
 </ul>
