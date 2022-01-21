@@ -1,0 +1,24 @@
+<base href="./" />
+<style>
+  .sbdocs.sbdocs-content {
+    max-width: 1200px;
+    border: 1px solid lightgrey
+  }
+  /* overriding default SB styling */
+  .sbdocs {
+    font-family: 'gotham-book', 'Helvetica', 'Arial', sans-serif  !important; 
+  }
+</style>
+<script>
+  // Storybook has an odd behaviour and will open a new SB inside the current SB when using
+  // <a href="someId" />
+  function scrollIntoView(elementId) {
+    document
+    .getElementById(elementId)
+    .scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      alignToTop: true
+    })
+  }
+</script>

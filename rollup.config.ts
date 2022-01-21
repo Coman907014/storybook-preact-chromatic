@@ -12,7 +12,7 @@ const INPUTS = [
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
-export default INPUTS.map(path => {
+export default INPUTS.map((path) => {
   const [pathName] = path.split('.');
 
   return {
@@ -42,7 +42,7 @@ export default INPUTS.map(path => {
       }),
       less({
         include: [ '**/*.less', '**/*.css' ],
-        output: 'public/index.css'
+        output: 'public/theme/index.css'
       }),
       typescript(),
       preact({

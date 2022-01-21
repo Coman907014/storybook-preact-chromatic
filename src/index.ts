@@ -1,4 +1,3 @@
-import App from './components/app';
-import './theme/index.less'
-export { default as useSetTheme } from './theme/hooks/useSetTheme'
-export default App;
+import './style/index.less';
+import './theme/index.less';
+export { default as setTheme } from './theme/utils/setTheme'

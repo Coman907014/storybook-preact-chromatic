@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
@@ -6,8 +8,22 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "storybook-preset-less"
+    "storybook-addon-designs",
+    "@storybook/addon-notes/register"
   ],
-  babel: async (options) => ({ ...options }),
-  "framework": "@storybook/preact",
+  webpackFinal: async (config, { configType }) => {
+    if (configType === 'PRODUCTION') config.output.publicPath = '/preact-story-book/assets/';
+    config.module.rules.push({
+      test: /\.less$/,
+      use: ['style-loader', 'css-loader', 'less-loader'],
+      include: path.resolve(__dirname, '../'),
+    });    
+    return config;
+  },
+  managerWebpack: async (config, { configType }) => {
+    if (configType === 'PRODUCTION') config.output.publicPath = '/preact-story-book/assets/';
+
+    return config;
+  },
+  "framework": "@storybook/preact"
 }

@@ -7,7 +7,6 @@ import BreakpointSystem from '../assets/foundations/BreakpointSystem.png';
 import UsageGuidelines from '../assets/foundations/UsageGuidelines.png';
 
 import colors from '../../theme/constants/colors'
-import useSetTheme from '../../theme/hooks/useSetTheme';
 import '../../theme/index.less';
 
 <Meta title="Foundations/Layout" />
@@ -19,20 +18,65 @@ import '../../theme/index.less';
     text-align: center;
     margin-top: 10px !important;
   }
+  .content-element {
+    cursor: pointer
+  }
+
+  .content-element:hover {
+    text-decoration: underline
+  }
 `}</style>
 
 <div className="row start-align col-lg-12 col-md-12 col-sm-12">
   <h1 className="row start-align col-lg-12 col-md-12 col-sm-12">Layout</h1>
 </div>
 
-<div className="row start-align col-lg-12 col-md-12 col-sm-12 alert-text">
+<div className="row start-align col-lg-12 col-md-12 col-sm-12">
   <p className="row start-align col-lg-12 col-md-12 col-sm-12">
     Add layout description here.
   </p>
 </div>
 
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pb-16">
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pb-4">
+    Table of contents
+  </div>
+  <div
+    className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('baseline') }>
+      1. Baseline
+  </div>
+   <div
+    className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('layoutGrid') }>
+      2. Layout Grids
+  </div>
+  <div
+      className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('breakpointSystem') }>
+      3. Breakpoint System
+  </div>
+  <div
+      className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('columns') }>
+      4. Columns
+  </div>
+  <div
+      className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('usageGuidelines') }>
+      5. Usage Guidelines
+  </div>
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8">
+    <a
+      className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8" 
+      src="https://www.figma.com/file/c6sMolrQvcHcsf1i0aq9HK/VAA---1.-Foundations?node-id=614%3A14834">
+      Figma Information
+    </a>
+  </div>
+</div>
+
 <div className="row start-align col-lg-12 col-md-12 col-sm-12">
-  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Baseline</h2>
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12" id="baseline">Baseline</h2>
 </div>
 
 <div className="row start-align col-lg-12 col-md-12 col-sm-12">
@@ -46,36 +90,8 @@ import '../../theme/index.less';
   </p>
 </div>
 
-<div className="row start-align col-lg-12 col-md-12 col-sm-12">
-  <img src={Baseline1} className="row link-list start-align col-lg-8 col-md-8 col-sm-8" alt="baseline" style={{ width: '100%' }} />
-  <div className="row link-list start-align col-lg-4 col-md-4 col-sm-4">
-    <div className="row link-list start-align col-lg-12 col-md-12 col-sm-12">
-      <strong>Always follow the grid</strong>
-    </div>
-    <div className="row link-list start-align col-lg-12 col-md-12 col-sm-12">
-      The Virgin grid layout uses a base unit of 4px. Every space and dimension should be a multiple of four.
-    </div>
-  </div>
-
-  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
-    <div className="row link-list start-align col-lg-4 col-md-4 col-sm-4">
-      <div className="row link-list start-align col-lg-12 col-md-12 col-sm-12">
-        <strong>Why 4 pixels</strong>
-      </div>
-      <div className="row link-list start-align col-lg-12 col-md-12 col-sm-12">
-        The grid’s 4-pixel base unit allows components to scale consistently across all display sizes in Virgin’s products, from our mobile apps to websites. In this example, the corner radius of each button is also 4 pixels.
-      </div>
-    </div>
-    <img src={Baseline2} className="row link-list start-align col-lg-8 col-md-8 col-sm-8" alt="baseline" style={{ width: '100%' }} />
-  </div>
-</div>
-
-<div className="row start-align col-lg-12 col-md-12 col-sm-12">
-  <h3 className="row start-align col-lg-12 col-md-12 col-sm-12">Vertical Rhythm</h3>
-  <div className="row start-align col-lg-12 col-md-12 col-sm-12">TBD?</div>
-</div>
 <div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
-  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Layout Grids</h2>
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12" id="layoutGrid">Layout Grids</h2>
   <h3 className="row start-align col-lg-12 col-md-12 col-sm-12">Grid Anatomy</h3>
   <img className="row start-align col-lg-12 col-md-12 col-sm-12" src={LayoutGrids1} style={{ width: '100%' }}/>
   <h5 className="row start-align col-lg-12 col-md-12 col-sm-12">Columns</h5>
@@ -84,7 +100,7 @@ import '../../theme/index.less';
   <p className="row start-align col-lg-12 col-md-12 col-sm-12">A gutter is the space between columns, helping to separate content on a page. They are fixed values that can change at each breakpoint to better adapt to a given screen resolution.</p>
   <h5 className="row start-align col-lg-12 col-md-12 col-sm-12">Margins</h5>
   <p className="row start-align col-lg-12 col-md-12 col-sm-12">Margins are the space either side of the columns on the left and right edges of the screen. They can be fixed or scaling values that can change at each breakpoint to better adapt to a given screen resolution.</p>
-  <h3 className="row start-align col-lg-12 col-md-12 col-sm-12">Breakpoint System</h3>
+  <h3 className="row start-align col-lg-12 col-md-12 col-sm-12" id="breakpointSystem">Breakpoint System</h3>
   <p className="row start-align col-lg-12 col-md-12 col-sm-12">Users expect any website to be perfectly complementary with every single device they own – desktop, tablet, or mobile. If a website’s responsive design does not align with a certain device resolution (especially a commonly used device), the site is at risk of missing out on a segment of its target audience. Therefore, breakpoints help to maintain layout integrity across screen sizes.</p>
   <div className="row center-align col-lg-12 col-md-12 col-sm-12" style={{ display: 'flex', marginTop: '10px' }}>
     <img src={BreakpointSystem} style={{ margin: '0 auto' }}/>
@@ -92,8 +108,8 @@ import '../../theme/index.less';
 </div>
 
 <div className="row start-align col-lg-12 col-md-12 col-sm-12">
-  <h3 className="row start-align col-lg-12 col-md-12 col-sm-12">Columns</h3>
-  <p className="row start-align col-lg-12 col-md-12 col-sm-12">Responsiveness can be showcased using Storybook's <a href="https://storybook.js.org/docs/react/essentials/viewport" target="_blank">viewport changer</a>.</p>
+  <h3 className="row start-align col-lg-12 col-md-12 col-sm-12" id="columns">Columns</h3>
+  <p className="row start-align col-lg-12 col-md-12 col-sm-12">Responsiveness can be showcased using Storybook's <a href="https://storybook.js.org/docs/react/essentials/viewport" target="_blank"> viewport changer</a>.</p>
 </div>
 
 <div className="row start-align col-lg-12 col-md-12 col-sm-12">
@@ -171,8 +187,114 @@ import '../../theme/index.less';
 </div>
 
 
+<div className="start-align col-lg-12 col-md-12 col-sm-12 pt-16">
+  <h4 className="center-align col-lg-12 col-md-12 col-sm-12">Beginning of breakpoint – 320px</h4>
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12">
+    <div className="row" style={{ width: '320px', background: '#F8F9FA', margin: 'auto', padding: '5px 0' }}>
+    <div className="center-align col-lg-12 col-md-12 col-sm-12 mt-4" style={{ background: '#C8F3FD' }}> 1/1 </div>
+    <div className="center-align col-lg-6 col-md-6 col-sm-6 mt-4" style={{ background: '#C8F3FD' }}> 1/2 </div>
+    <div className="center-align col-lg-6 col-md-6 col-sm-6 mt-4" style={{ background: '#C8F3FD' }}> 1/2 </div>
+    <div className="center-align col-lg-4 col-md-4 col-sm-4 mt-4" style={{ background: '#C8F3FD' }}> 1/3 </div>
+    <div className="center-align col-lg-4 col-md-4 col-sm-4 mt-4" style={{ background: '#C8F3FD' }}> 1/3 </div>
+    <div className="center-align col-lg-4 col-md-4 col-sm-4 mt-4" style={{ background: '#C8F3FD' }}> 1/3 </div>
+    </div>
+  </div>
+</div>
+
+
+<div className="start-align col-lg-12 col-md-12 col-sm-12 pt-16">
+  <h4 className="center-align col-lg-12 col-md-12 col-sm-12">Beginning of breakpoint – 640px</h4>
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12">
+    <div className="row" style={{ width: '640px', background: '#F8F9FA', margin: 'auto', padding: '5px 0' }}>
+    <div className="center-align col-lg-12 col-md-12 col-sm-12 mt-4" style={{ background: '#C8F3FD' }}> 1/1 </div>
+    <div className="center-align col-lg-6 col-md-6 col-sm-6 mt-4" style={{ background: '#C8F3FD' }}> 1/2 </div>
+    <div className="center-align col-lg-6 col-md-6 col-sm-6 mt-4" style={{ background: '#C8F3FD' }}> 1/2 </div>
+    <div className="center-align col-lg-4 col-md-4 col-sm-4 mt-4" style={{ background: '#C8F3FD' }}> 1/3 </div>
+    <div className="center-align col-lg-4 col-md-4 col-sm-4 mt-4" style={{ background: '#C8F3FD' }}> 1/3 </div>
+    <div className="center-align col-lg-4 col-md-4 col-sm-4 mt-4" style={{ background: '#C8F3FD' }}> 1/3 </div>
+    <div className="center-align col-lg-3 col-md-3 col-sm-3 mt-4" style={{ background: '#C8F3FD' }}> 1/4 </div>
+    <div className="center-align col-lg-3 col-md-3 col-sm-3 mt-4" style={{ background: '#C8F3FD' }}> 1/4 </div>
+    <div className="center-align col-lg-3 col-md-3 col-sm-3 mt-4" style={{ background: '#C8F3FD' }}> 1/4 </div>
+    <div className="center-align col-lg-3 col-md-3 col-sm-3 mt-4" style={{ background: '#C8F3FD' }}> 1/4 </div>
+    </div>
+  </div>
+</div>
+
+<div className="start-align col-lg-12 col-md-12 col-sm-12 pt-16">
+  <h4 className="center-align col-lg-12 col-md-12 col-sm-12">Beginning of breakpoint – 992px</h4>
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12">
+    <div className="row" style={{ width: '992px', background: '#F8F9FA', margin: 'auto', padding: '5px 0' }}>
+    <div className="center-align col-lg-12 col-md-12 col-sm-12 mt-4" style={{ background: '#C8F3FD' }}> 1/1 </div>
+    <div className="center-align col-lg-6 col-md-6 col-sm-6 mt-4" style={{ background: '#C8F3FD' }}> 1/2 </div>
+    <div className="center-align col-lg-6 col-md-6 col-sm-6 mt-4" style={{ background: '#C8F3FD' }}> 1/2 </div>
+    <div className="center-align col-lg-4 col-md-4 col-sm-4 mt-4" style={{ background: '#C8F3FD' }}> 1/3 </div>
+    <div className="center-align col-lg-4 col-md-4 col-sm-4 mt-4" style={{ background: '#C8F3FD' }}> 1/3 </div>
+    <div className="center-align col-lg-4 col-md-4 col-sm-4 mt-4" style={{ background: '#C8F3FD' }}> 1/3 </div>
+    <div className="center-align col-lg-3 col-md-3 col-sm-3 mt-4" style={{ background: '#C8F3FD' }}> 1/4 </div>
+    <div className="center-align col-lg-3 col-md-3 col-sm-3 mt-4" style={{ background: '#C8F3FD' }}> 1/4 </div>
+    <div className="center-align col-lg-3 col-md-3 col-sm-3 mt-4" style={{ background: '#C8F3FD' }}> 1/4 </div>
+    <div className="center-align col-lg-3 col-md-3 col-sm-3 mt-4" style={{ background: '#C8F3FD' }}> 1/4 </div>
+    <div className="center-align col-lg-2 col-md-2 col-sm-2 mt-4" style={{ background: '#C8F3FD' }}> 1/6 </div>
+    <div className="center-align col-lg-2 col-md-2 col-sm-2 mt-4" style={{ background: '#C8F3FD' }}> 1/6 </div>
+    <div className="center-align col-lg-2 col-md-2 col-sm-2 mt-4" style={{ background: '#C8F3FD' }}> 1/6 </div>
+    <div className="center-align col-lg-2 col-md-2 col-sm-2 mt-4" style={{ background: '#C8F3FD' }}> 1/6 </div>
+    <div className="center-align col-lg-2 col-md-2 col-sm-2 mt-4" style={{ background: '#C8F3FD' }}> 1/6 </div>
+    <div className="center-align col-lg-2 col-md-2 col-sm-2 mt-4" style={{ background: '#C8F3FD' }}> 1/6 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    </div>
+  </div>
+</div>
+
+
+<div className="start-align col-lg-12 col-md-12 col-sm-12 pt-16">
+  <h4 className="center-align col-lg-12 col-md-12 col-sm-12">Beginning of breakpoint – 1280px</h4>
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12">
+    <div className="row" style={{ width: '100%', background: '#F8F9FA', margin: 'auto', padding: '5px 0' }}>
+    <div className="center-align col-lg-12 col-md-12 col-sm-12 mt-4" style={{ background: '#C8F3FD' }}> 1/1 </div>
+    <div className="center-align col-lg-6 col-md-6 col-sm-6 mt-4" style={{ background: '#C8F3FD' }}> 1/2 </div>
+    <div className="center-align col-lg-6 col-md-6 col-sm-6 mt-4" style={{ background: '#C8F3FD' }}> 1/2 </div>
+    <div className="center-align col-lg-4 col-md-4 col-sm-4 mt-4" style={{ background: '#C8F3FD' }}> 1/3 </div>
+    <div className="center-align col-lg-4 col-md-4 col-sm-4 mt-4" style={{ background: '#C8F3FD' }}> 1/3 </div>
+    <div className="center-align col-lg-4 col-md-4 col-sm-4 mt-4" style={{ background: '#C8F3FD' }}> 1/3 </div>
+    <div className="center-align col-lg-3 col-md-3 col-sm-3 mt-4" style={{ background: '#C8F3FD' }}> 1/4 </div>
+    <div className="center-align col-lg-3 col-md-3 col-sm-3 mt-4" style={{ background: '#C8F3FD' }}> 1/4 </div>
+    <div className="center-align col-lg-3 col-md-3 col-sm-3 mt-4" style={{ background: '#C8F3FD' }}> 1/4 </div>
+    <div className="center-align col-lg-3 col-md-3 col-sm-3 mt-4" style={{ background: '#C8F3FD' }}> 1/4 </div>
+    <div className="center-align col-lg-2 col-md-2 col-sm-2 mt-4" style={{ background: '#C8F3FD' }}> 1/6 </div>
+    <div className="center-align col-lg-2 col-md-2 col-sm-2 mt-4" style={{ background: '#C8F3FD' }}> 1/6 </div>
+    <div className="center-align col-lg-2 col-md-2 col-sm-2 mt-4" style={{ background: '#C8F3FD' }}> 1/6 </div>
+    <div className="center-align col-lg-2 col-md-2 col-sm-2 mt-4" style={{ background: '#C8F3FD' }}> 1/6 </div>
+    <div className="center-align col-lg-2 col-md-2 col-sm-2 mt-4" style={{ background: '#C8F3FD' }}> 1/6 </div>
+    <div className="center-align col-lg-2 col-md-2 col-sm-2 mt-4" style={{ background: '#C8F3FD' }}> 1/6 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    <div className="center-align col-lg-1 col-md-1 col-sm-1 mt-4" style={{ background: '#C8F3FD' }}> 1/12 </div>
+    </div>
+  </div>
+</div>
+
 <div className="start-align col-lg-12 col-md-12 col-sm-12 pt-8">
-  <h3 className="start-align col-lg-12 col-md-12 col-sm-12">Usage Guidelines</h3>
+  <h3 className="start-align col-lg-12 col-md-12 col-sm-12" id="usageGuidelines">Usage Guidelines</h3>
   <img className="start-align col-lg-12 col-md-12 col-sm-12" src={UsageGuidelines} style={{ width: '100%' }} />
 </div>
 

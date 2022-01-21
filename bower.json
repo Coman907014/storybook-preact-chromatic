@@ -1,0 +1,17 @@
+{
+  "name": "story-book-preact",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Mark Burch <mark.burch@virginholidays.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

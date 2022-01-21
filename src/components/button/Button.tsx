@@ -1,18 +1,51 @@
 /** @jsx h */
-import { FunctionComponent, h } from "preact"
-import './Button.less';
+import { h } from 'preact';
+import PropTypes from 'prop-types';
+import './button.less';
 
-interface ButtonProps {
-  onClick: () => void;
-}
-
-const Button: FunctionComponent<ButtonProps> = ({ onClick }) => {
-
+/**
+ * Primary UI component for user interaction
+ */
+export const Button = ({ primary, backgroundColor, size, label, ...props }: any) => {
+  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
-    <button className={`buttonPrimary`} onClick={ onClick }>
-      SomeText
+    <button
+      type="button"
+      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      style={backgroundColor && { backgroundColor }}
+      {...props}
+    >
+      {label}
     </button>
-  )
+  );
 };
 
-export default Button;
+Button.propTypes = {
+  /**
+   * Is this the principal call to action on the page?
+   */
+  primary: PropTypes.bool,
+  /**
+   * What background color to use
+   */
+  backgroundColor: PropTypes.string,
+  /**
+   * How large should the button be?
+   */
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  /**
+   * Button contents
+   */
+  label: PropTypes.string.isRequired,
+  /**
+   * Optional click handler
+   */
+  onClick: PropTypes.func,
+};
+
+Button.defaultProps = {
+  backgroundColor: null,
+  primary: false,
+  size: 'medium',
+  onClick: undefined,
+};

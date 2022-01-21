@@ -1,0 +1,115 @@
+{
+  "v": 2,
+  "globalParameters": {},
+  "kindParameters": {
+    "Example/Introduction": {
+      "fileName": 1065,
+      "framework": "preact"
+    },
+    "Example/Button": {
+      "fileName": 1067,
+      "framework": "preact"
+    },
+    "Example/Header": {
+      "fileName": 204,
+      "framework": "preact"
+    },
+    "Example/Page": {
+      "fileName": 1072,
+      "framework": "preact"
+    }
+  },
+  "stories": {
+    "example-introduction--page": {
+      "id": "example-introduction--page",
+      "name": "Page",
+      "kind": "Example/Introduction",
+      "story": "Page",
+      "parameters": {
+        "docsOnly": true,
+        "__id": "example-introduction--page",
+        "__isArgsStory": false
+      }
+    },
+    "example-button--primary": {
+      "id": "example-button--primary",
+      "name": "Primary",
+      "kind": "Example/Button",
+      "story": "Primary",
+      "parameters": {
+        "__id": "example-button--primary",
+        "__isArgsStory": true
+      }
+    },
+    "example-button--secondary": {
+      "id": "example-button--secondary",
+      "name": "Secondary",
+      "kind": "Example/Button",
+      "story": "Secondary",
+      "parameters": {
+        "__id": "example-button--secondary",
+        "__isArgsStory": true
+      }
+    },
+    "example-button--large": {
+      "id": "example-button--large",
+      "name": "Large",
+      "kind": "Example/Button",
+      "story": "Large",
+      "parameters": {
+        "__id": "example-button--large",
+        "__isArgsStory": true
+      }
+    },
+    "example-button--small": {
+      "id": "example-button--small",
+      "name": "Small",
+      "kind": "Example/Button",
+      "story": "Small",
+      "parameters": {
+        "__id": "example-button--small",
+        "__isArgsStory": true
+      }
+    },
+    "example-header--logged-in": {
+      "id": "example-header--logged-in",
+      "name": "Logged In",
+      "kind": "Example/Header",
+      "story": "Logged In",
+      "parameters": {
+        "__id": "example-header--logged-in",
+        "__isArgsStory": true
+      }
+    },
+    "example-header--logged-out": {
+      "id": "example-header--logged-out",
+      "name": "Logged Out",
+      "kind": "Example/Header",
+      "story": "Logged Out",
+      "parameters": {
+        "__id": "example-header--logged-out",
+        "__isArgsStory": true
+      }
+    },
+    "example-page--logged-in": {
+      "id": "example-page--logged-in",
+      "name": "Logged In",
+      "kind": "Example/Page",
+      "story": "Logged In",
+      "parameters": {
+        "__id": "example-page--logged-in",
+        "__isArgsStory": true
+      }
+    },
+    "example-page--logged-out": {
+      "id": "example-page--logged-out",
+      "name": "Logged Out",
+      "kind": "Example/Page",
+      "story": "Logged Out",
+      "parameters": {
+        "__id": "example-page--logged-out",
+        "__isArgsStory": true
+      }
+    }
+  }
+}

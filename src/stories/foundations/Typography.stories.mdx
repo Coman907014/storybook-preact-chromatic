@@ -1,119 +1,273 @@
 import { Meta } from '@storybook/addon-docs';
-import Code from '../assets/code-brackets.svg';
-import Colors from '../assets/colors.svg';
-import Comments from '../assets/comments.svg';
-import Direction from '../assets/direction.svg';
-import Flow from '../assets/flow.svg';
-import Plugin from '../assets/plugin.svg';
-import Repo from '../assets/repo.svg';
-import StackAlt from '../assets/stackalt.svg';
+import Typography1 from '../assets/foundations/Typography1.png';
+import Typography2 from '../assets/foundations/Typography2.png';
+import Typography3 from '../assets/foundations/Typography3.png';
+
 import colors from '../../theme/constants/colors'
-import useSetTheme from '../../theme/hooks/useSetTheme';
 
 <Meta title="Foundations/Typography" />
 
 <style>{`
-  .subheading {
-    --mediumdark: '#999999';
-    font-weight: 900;
-    font-size: 13px;
-    color: ${colors.light['--N-50']};
-    letter-spacing: 6px;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    margin-top: 40px;
+  a {
+    padding: 0 2px;
+  }
+  .colored-content {
+    color: #865E87;
+    background-color: #F8F9FA;
   }
 
-  .link-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 10px;
+  .content-element {
+    cursor: pointer
   }
 
-  @media (min-width: 620px) {
-    .link-list {
-      row-gap: 20px;
-      column-gap: 20px;
-      grid-template-columns: 1fr 1fr;
-    }
+  .content-element:hover {
+    text-decoration: underline
   }
-
-  @media all and (-ms-high-contrast:none) {
-  .link-list {
-      display: -ms-grid;
-      -ms-grid-columns: 1fr 1fr;
-      -ms-grid-rows: 1fr 1fr;
-    }
-  }
-
-  .link-item {
-    display: block;
-    padding: 20px 30px 20px 15px;
-    border: 1px solid #00000010;
-    border-radius: 5px;
-    transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
-    color: #333333;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .link-item:hover {
-    border-color: #1EA7FD50;
-    transform: translate3d(0, -3px, 0);
-    box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
-  }
-
-  .link-item:active {
-    border-color: #1EA7FD;
-    transform: translate3d(0, 0, 0);
-  }
-
-  .link-item strong {
-    font-weight: 700;
-    display: block;
-    margin-bottom: 2px;
-  }
-  
-  .link-item img {
-    height: 40px;
-    width: 40px;
-    margin-right: 15px;
-    flex: none;
-  }
-
-  .link-item span {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  .tip {
-    display: inline-block;
-    border-radius: 1em;
-    font-size: 11px;
-    line-height: 12px;
-    font-weight: 700;
-    background: #E7FDD8;
-    color: #66BF3C;
-    padding: 4px 12px;
-    margin-right: 10px;
-    vertical-align: top;
-  }
-
-  .tip-wrapper {
-    font-size: 13px;
-    line-height: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  .tip-wrapper code {
-    font-size: 12px;
-    display: inline-block;
-  }
-
-  
 `}</style>
 
-# Typography
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 py-16">
+  <h1 className="row start-align col-lg-12 col-md-12 col-sm-12" id="baseline">Typography</h1>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pb-16">
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pb-4">
+    Table of contents
+  </div>
+  <div
+    className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('typeface') }>
+      1. Typeface
+  </div>
+  <div
+    className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('style') }>
+      2. Style
+  </div>
+  <div
+    className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('accessibility') }>
+      3. Accessibility
+  </div>
+
+  
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8">
+    <a
+      className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8" 
+      src="https://www.figma.com/file/c6sMolrQvcHcsf1i0aq9HK/VAA---1.-Foundations?node-id=1%3A486">
+      Figma Information
+    </a>
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-16" id="typeface">
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12" id="baseline">Typeface</h2>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12">
+    Virgin Atlantic’s Design System uses the typeface Gotham. It is a contemporary, versatile and friendly typeface that can be used in many different ways to build a strong and recognisable brand. It is a sans-serif typeface known for its geometric structure, its reasonably high x-height and wide apertures.
+    To access Gotham, please contact Someone.
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 colored-content">
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-32">
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-32">
+    abcdefghijklmnopqrstuvwxyz
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-32">
+    1234567890
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-32">
+    !@#$%&{};”?
+  </div>
+
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-16">
+  <h3 className="row start-align col-lg-12 col-md-12 col-sm-12">Scale</h3>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12">
+    Our typography scale is derived from a 1.25 font size ratio, also known as the major third type scale. This means that each size is multiplied or divided by 1.25 from the previous size, starting with the base size (16px or 1rem), and is either rounded up or down in consideration of the 4px baseline grid.
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+    In addition, these fonts have been tried and testing with our digital experiences and hence some sizes have been introuduced on top of the major third type scale to better support visual hierarchy in content-heavy areas of our platforms.
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 py-16 colored-content">
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 font-64 py-8 pl-16">
+    1. Gotham 64
+  </div>
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pl-32">
+    font-size: 64px (4rem); line-height: 76px (4.75rem)
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 font-48 py-8 pl-16">
+    2. Gotham 48
+  </div>
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pl-32">
+    font-size: 48px (3rem); line-height: 60px (3.75rem)
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 font-40 py-8 pl-16">
+    3. Gotham 40
+  </div>
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pl-32">
+    font-size: 40px (2.5rem); line-height: 48px (3rem)
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 font-36 py-8 pl-16">
+    4. Gotham 36
+  </div>
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pl-32">
+    font-size: 36px (2.25rem); line-height: 44px (2.75rem)
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 font-32 py-8 pl-16">
+    5. Gotham 32
+  </div>
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pl-32">
+    font-size: 32px (2rem); line-height: 40px (2.5rem)
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 font-28 py-8 pl-16">
+    6. Gotham 28
+  </div>
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pl-32">
+    font-size: 28px (1.75rem); line-height: 36px (2.25rem)
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 font-24 py-8 pl-16">
+    7. Gotham 24
+  </div>
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pl-32">
+    font-size: 24px (1.5rem); line-height: 32px (2rem)
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 font-20 py-8 pl-16">
+    8. Gotham 20
+  </div>
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pl-32">
+    font-size: 20px (1.25rem); line-height: 28px (1.75rem)
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 font-16 py-8 pl-16">
+    9. Gotham 16
+  </div>
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pl-32">
+    font-size: 16px (1rem); line-height: 24px (1.5rem)
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 font-14 py-8 pl-16">
+    10. Gotham 14
+  </div>
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pl-32">
+    font-size: 14px (0.875rem); line-height: 22px (1.375rem)
+  </div>
+  
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 font-12 py-8 pl-16">
+    11. Gotham 12
+  </div>
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pl-32">
+    font-size: 12px (0.75rem); line-height: 16px (1rem)
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 font-12 py-16" id="style">
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Style</h2>
+  <h3 className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">Weights</h3>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-64 colored-content">
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-32 font-secondary">Light</div>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-32 font-primary">Book</div>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-32 font-tertiary">Medium</div>
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 font-12 py-16" id="style">
+  <h3 className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">Italic</h3>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">
+    Each weight has an italic style, which should only be used when you need to emphasize certain works in a sentence. TBD
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 font-12 py-16" id="style">
+  <h3 className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">Underline</h3>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">
+    TBD
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 py-16" id="accessibility">
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Accessibility</h2>
+  
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-italic font-tertiary">
+    Our experiences should be build for everyone.
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">
+    Virgin Atlantic believes we should deliver designs that work, whatever the user's circumstances, and always provide support to those who want it. When it comes to typography, there are various international standards which help ensure that content is readable and accessible for all. Our type system is built upon these international standards which guarantees that everything is accessible from a readability perspective.
+  </div>
+
+  <div className="row start-align col-lg-3 col-md-3 col-sm-3 py-8">
+    <h3 className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">Hierarchy</h3>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-tertiary">Use headings to communicate hierarchy (US Accessibility Standards).</div>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">Virgin Atlantic’s heading styles differ from body text through a combination of increased size and differing weight. This ensures they are distinct from body text but related to each other with typeface consistency, which helps users to scan content easily.</div>
+  </div>
+
+  <img className="row start-align col-lg-9 col-md-9 col-sm-9 py-8" src={Typography1} />
+
+  <div className="row start-align col-lg-6 col-md-6 col-sm-6 py-8">
+    <h3 className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">Line Height</h3>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-tertiary">Maintain a line height that encourages clear readability.</div>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">Body text however maintains a 1.5x line height in order to comply with the WCAG AA rating. Further information from the US Accessibility Standards suggests that the line height for body text should be larger than headings and captions.</div>
+  </div>
+
+  <img className="row start-align col-lg-6 col-md-6 col-sm-6 py-8" src={Typography2} />
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 py-16">
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">
+    <h3 className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">Line length</h3>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-tertiary">Maintain a line length that promotes comfortable reading.</div>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">Don’t make lines too long or too short: The US Accessibility Standards recommend that a readable line is between 45 and 75 characters and approximately 66 characters per line is comfortable. To further support this, WCAG state that a line should be no longer than 80 characters long to help those have trouble keeping their place when reading long lines of text.</div>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">For shorter pieces of text such as captions, marginal text, and forms, the recommended readable line length is between 20 and 40 characters (Material Design).</div>
+  </div>
+
+  <img className="row start-align col-lg-12 col-md-12 col-sm-12 py-8" src={Typography3} />
+
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 py-16">
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">
+    <h3 className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">Spacing</h3>
+    <h4 className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">Paragraph</h4>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-tertiary">Use paragraph spacing to make it easier for people to know what to read and where to begin.</div>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">Paragraph spacing should be open enough to feel light, but close enough to establish a proper relationship between elements.<a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html" target="_blank"> WCAG</a> suggests that spacing between paragraphics must be at least 2 times the font size.</div>
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">
+    <h4 className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">Letter</h4>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-tertiary">Use letter spacing to improve legibility and readability of words.</div>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8"><a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html">WCAG</a> suggests that tracking must be at least 0.12 times the font size.</div>
+  </div>
+
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">
+    <h4 className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">Word</h4>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8 font-tertiary">Use word spacing to make it easier for people to read sentences without them appearing to run into each other.</div>
+    <div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8"><a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html">WCAG</a> suggests that word spacing must be at least 0.16 times the font size.</div>
+  </div>
+</div>

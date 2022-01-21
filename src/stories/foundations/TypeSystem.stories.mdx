@@ -1,0 +1,661 @@
+import { Meta } from '@storybook/addon-docs';
+import Typography1 from '../assets/foundations/Typography1.png';
+import Typography2 from '../assets/foundations/Typography2.png';
+import Typography3 from '../assets/foundations/Typography3.png';
+
+import colors from '../../theme/constants/colors'
+
+<Meta title="Foundations/Type System" />
+
+<style>{`
+  a {
+    padding: 0 2px;
+  }
+  .header {
+    background-color: #EBEFF1;
+  }
+
+  .content-element {
+    cursor: pointer
+  }
+
+  .content-element:hover {
+    text-decoration: underline
+  }
+`}</style>
+
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 py-16">
+  <h1 className="row start-align col-lg-12 col-md-12 col-sm-12" id="baseline">Type System</h1>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pb-16">
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pb-4">
+    Table of contents
+  </div>
+  <div
+    className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('displayHeading') }>
+      1. Display Heading
+  </div>
+  <div
+    className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('heading') }>
+      2. Heading
+  </div>
+  <div
+    className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('body') }>
+      3. Body/Paragraph
+  </div>
+
+  <div
+    className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('links') }>
+      4. Links
+  </div>
+
+  <div
+    className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('caption') }>
+      5. Caption
+  </div>
+
+  
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8">
+    <a
+      className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8" 
+      src="https://www.figma.com/file/c6sMolrQvcHcsf1i0aq9HK/VAA---1.-Foundations?node-id=1%3A486">
+      Figma Information
+    </a>
+  </div>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 mt-16" id="displayHeading">
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12" id="baseline">Display Heading</h2>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 ont-tertiary header mt-24 mb-4 display-heading-xxl">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    XXL
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 36px; Line-height: 44px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 48px; Line-height: 60px;
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    Font-size: 64px; Line-height: 76px;
+  </div>
+  
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 mt-16" id="heading">
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12" id="baseline">Heading</h2>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 font-tertiary header my-8 mt-16 heading-xl">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    XL
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 28px; Line-height: 36px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 32px; Line-height: 40x;
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    Font-size: 40px; Line-height: 48px;
+  </div>
+
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 ont-tertiary header mt-24 mb-4 heading-l">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    L
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 24px; Line-height: 32px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 28px; Line-height: 36x;
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    Font-size: 32px; Line-height: 40px;
+  </div>
+
+  
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 ont-tertiary header mt-24 mb-4 heading-m">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    M
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 20px; Line-height: 28px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 ont-tertiary header mt-24 mb-4 heading-s">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    S
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 16px; Line-height: 24px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 ont-tertiary header mt-24 mb-4 heading-xs">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    XS
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 12px; Line-height: 16px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+  
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 mt-16" id="body">
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12" id="baseline">Body/Paragraph</h2>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">
+
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 ont-tertiary header mt-24 mb-4 body-l">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    L
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 20px; Line-height: 28px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 ont-tertiary header mt-24 mb-4 body-m">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    M
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 16px; Line-height: 24px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 ont-tertiary header mt-24 mb-4 body-s">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    S
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 14px; Line-height: 22px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 ont-tertiary header mt-24 mb-4 body-xs">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    XS
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 12px; Line-height: 16px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+</div>
+
+
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 mt-16" id="links">
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12" id="baseline">Links</h2>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">
+
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 ont-tertiary header mt-24 mb-4 link-l">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    L
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 20px; Line-height: 28px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 ont-tertiary header mt-24 mb-4 link-m">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    M
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 16px; Line-height: 24px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 ont-tertiary header mt-24 mb-4 link-s">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    S
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 14px; Line-height: 22px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 ont-tertiary header mt-24 mb-4 link-xs">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    XS
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 12px; Line-height: 16px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+</div>
+
+
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 mt-16" id="caption">
+  <h2 className="row start-align col-lg-12 col-md-12 col-sm-12" id="baseline">Caption</h2>
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 py-8">
+
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 ont-tertiary header mt-24 mb-4 caption-s">
+    The quick brown fox jumps over the lazy dog
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    Size
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 0-767px
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 ont-tertiary header my-4">
+    Default Breakpoint 768-991px
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 ont-tertiary header my-4">
+    Default Breakpoint 992px and upwards
+  </div>
+
+  <div className="row center-align col-lg-2 col-md-2 col-sm-2 ont-tertiary header my-4">
+    S
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    Font-size: 12px; Line-height: 16px;
+  </div>
+
+  <div className="row center-align col-lg-3 col-md-3 col-sm-3 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+  <div className="row center-align col-lg-4 col-md-4 col-sm-4 header font-14 my-4 middle-align">
+    No Changes
+  </div>
+
+</div>
+

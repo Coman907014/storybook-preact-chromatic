@@ -1,7 +1,4 @@
-declare module "*.module.css";
-declare module "*.css";
-
-declare module '*.less' {
-  const resource: {[key: string]: string};
-  export = resource;
+declare module "*.less" {
+    const mapping: Record<string, string>;
+    export default mapping;
 }

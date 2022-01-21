@@ -1,6 +1,6 @@
 {
-  "name": "my-project",
-  "short_name": "my-project",
+  "name": "story-book-preact",
+  "short_name": "story-book-preact",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",

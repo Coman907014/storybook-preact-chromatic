@@ -1,4 +1,4 @@
-import { Meta, Preview, Story } from '@storybook/addon-docs';
+import { Meta } from '@storybook/addon-docs';
 import SpacingUsageGuidelines1 from '../assets/foundations/SpacingUsageGuidelines1.png';
 import SpacingUsageGuidelines2 from '../assets/foundations/SpacingUsageGuidelines2.png';
 import SpacingUsageGuidelines3 from '../assets/foundations/SpacingUsageGuidelines3.png';
@@ -10,6 +10,17 @@ import SpacingTouchTargetsGuidelines from '../assets/foundations/SpacingTouchTar
 
 import '../../theme/index.less';
 
+<style>{`
+  a,
+  .content-element {
+    cursor: pointer
+  }
+
+  .content-element:hover {
+    text-decoration: underline
+  }
+`}</style>
+
 <Meta title="Foundations/Spacing" />
 
 <div className="row start-align col-lg-12 col-md-12 col-sm-12 pb-8">
@@ -18,7 +29,46 @@ import '../../theme/index.less';
   </div>
 </div>
 
-<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pb-16">
+  <div className="row start-align col-lg-12 col-md-12 col-sm-12 pb-4">
+    Table of contents
+  </div>
+  <div
+    className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('spacingScale') }>
+      1. Spacing Scale
+  </div>
+  <div
+    className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('usageGuidelines') }>
+      2. Usage Guidelines
+  </div>
+  <div
+    className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('exceptions') }>
+      3. Exceptions
+  </div>
+  <div
+      className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('examples') }>
+      4. Examples
+  </div>
+  <div
+    className="content-element row start-align col-lg-12 col-md-12 col-sm-12 pt-4"
+    onClick={() => scrollIntoView('touchTargets') }>
+      5. Touch Targets
+  </div>
+  <div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8">
+    <a
+      className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8" 
+      src="https://www.figma.com/file/c6sMolrQvcHcsf1i0aq9HK/VAA---1.-Foundations?node-id=614%3A14834">
+      Figma Information
+    </a>
+  </div>
+  
+</div>
+
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8" id="spacingScale">
   <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Spacing Scale</h2>
 </div>
 
@@ -136,7 +186,7 @@ import '../../theme/index.less';
 
 </div>
 
-<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8" id="usageGuidelines">
   <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Usage Guidelines</h2>
 </div>
 
@@ -170,7 +220,7 @@ import '../../theme/index.less';
   </div>
 </div>
 
-<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8" id="exceptions">
   <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Exceptions</h2>
 </div>
 
@@ -194,7 +244,7 @@ import '../../theme/index.less';
   </div>
 </div>
 
-<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8" id="examples">
   <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Examples</h2>
 </div>
 
@@ -237,7 +287,7 @@ import '../../theme/index.less';
   </div>
 </div>
 
-<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8">
+<div className="row start-align col-lg-12 col-md-12 col-sm-12 pt-8" id="touchTargets">
   <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Touch Targets</h2>
 </div>
 
@@ -271,8 +321,10 @@ import '../../theme/index.less';
   <h2 className="row start-align col-lg-12 col-md-12 col-sm-12">Usage Guidelines</h2>
 </div>
 
-<div className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8">
+<div className="row center-align col-lg-12 col-md-12 col-sm-12 py-8">
   <img
     className="row center-align col-lg-12 col-md-12 col-sm-12 pt-8" 
     src={SpacingTouchTargetsGuidelines}/>
 </div>
+
+
