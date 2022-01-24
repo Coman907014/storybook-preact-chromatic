@@ -1,6 +1,6 @@
 /** @jsx h */
 import { h } from 'preact';
-import './button.less';
+import './Button.less';
 
 interface ButtonProps {
   variant: 'primary' | 'secondary' | 'tertiary'
