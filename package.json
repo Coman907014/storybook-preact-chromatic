@@ -28,20 +28,24 @@
     ]
   },
   "dependencies": {
+    "@storybook/addon-backgrounds": "^6.4.14",
+    "@storybook/addon-controls": "^6.4.14",
     "preact": "^10.3.1",
     "preact-render-to-string": "^5.1.4",
     "preact-router": "^3.2.1",
     "storybook": "^6.4.13",
+    "storybook-addon-pseudo-states": "^1.0.0",
+    "storybook-dark-mode": "^1.0.8",
     "storybook-preset-less": "^1.1.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.13",
     "@babel/core": "^7.12.13",
-    "@storybook/addon-notes": "^5.3.21",
-    "@storybook/addon-a11y": "^6.4.9",
+    "@storybook/addon-a11y": "^6.4.14",
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
     "@storybook/addon-links": "^6.4.9",
+    "@storybook/addon-notes": "^5.3.21",
     "@storybook/preact": "^6.4.9",
     "@types/enzyme": "^3.10.5",
     "@types/jest": "^26.0.8",

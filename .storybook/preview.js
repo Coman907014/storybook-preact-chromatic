@@ -1,38 +1,32 @@
 /** @jsx h */
 import { h } from 'preact';
+import addons from '@storybook/addons';
 import { addDecorator } from '@storybook/preact';
 import { withDesign } from 'storybook-addon-designs'
+import { useDarkMode } from 'storybook-dark-mode';
+
 import setTheme from '../src/theme/utils/setTheme';
 
 addDecorator(withDesign)
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
+  controls: { expanded: true }
 }
 
 export const decorators = [
   (Story, props) => {
-    // We need this in order to make our :root variables available inside Storybook
+
     setTheme();
 
-    return <div style={{ maxWidth: '1200px', margin: 'auto' }} id="alandala">
-      <div style={{ borderRadius: '20px', background: 'lightgray', padding: '10px' }}>
-        <label for="theme">Select the theme</label>
-        <select
-          style={{ marginLeft: '20px' }}
-          onChange={(event) => {
-            console.log('event', event)
-            console.log('event.target.value.toLowerCase()', event.target.value.toLowerCase())
-            setTheme(event.target.value.toLowerCase())
-          }}
-          name="theme">
-          <option selected value="Light">Light</option>
-          <option value="Dark">Dark</option>
-        </select>
+    useDarkMode() ? setTheme('dark') : setTheme('light');
+
+    return (
+      <div style={{ maxWidth: '1200px', margin: 'auto' }}>
+        <div style={{ marginTop: '20px' }}>
+          <Story {...props}/>
+        </div>
       </div>
-      <div style={{ marginTop: '20px' }}>
-        <Story {...props}/>
-      </div>
-      </div>
+    )
   }
 ]
